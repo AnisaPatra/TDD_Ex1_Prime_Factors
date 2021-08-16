@@ -1,15 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class PrimeFactor {
-    public int prime(int no){
+    public static List<Integer> prime(int no){
+        ArrayList<Integer> primefactors = new ArrayList<>();
+
         if (no == 1){
-            return 1;
+            primefactors.add(1);
         }
         if(no == 2){
-            return 2;
+            primefactors.add(2);
         }
         if(no == 3){
-            return 3;
+            primefactors.add(3);
         }
-        return 0;
+
+        if(no==4){
+            if(no%2==0){
+                primefactors.add(2,no/2);
+            }
+        }
+
+        return primefactors;
     }
 }
