@@ -18,6 +18,6 @@ public class PrimeFactorTest {
     @Test
     void testFactorsof3() {
         PrimeFactor primefacts = new PrimeFactor();
-        assertEquals(3,primefacts.prime(2),"Should return prime factors of given number.");
+        assertEquals(3,primefacts.prime(3),"Should return prime factors of given number.");
     }
 }

@@ -7,6 +7,9 @@ public class PrimeFactor {
         if(no == 2){
             return 2;
         }
+        if(no == 3){
+            return 3;
+        }
         return 0;
     }
 }
