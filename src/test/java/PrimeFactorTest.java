@@ -41,4 +41,16 @@ public class PrimeFactorTest {
         PrimeFactor primefacts = new PrimeFactor();
         assertEquals(list(2,3),primefacts.prime(6),"Should return prime factors of given number.");
     }
+
+    @Test
+    void testFactorsof5() {
+        PrimeFactor primefacts = new PrimeFactor();
+        assertEquals(list(5),primefacts.prime(5),"Should return prime factors of given number.");
+    }
+
+    @Test
+    void testFactorsofRandom300() {
+        PrimeFactor primefacts = new PrimeFactor();
+        assertEquals(list(2,2,3,5,5),primefacts.prime(300),"Should return prime factors of given number.");
+    }
 }
