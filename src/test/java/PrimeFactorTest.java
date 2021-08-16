@@ -15,7 +15,7 @@ public class PrimeFactorTest {
     @Test
     void testFactorf1() {
         PrimeFactor primefacts = new PrimeFactor();
-        assertEquals(list(1),primefacts.prime(1),"Should return prime factors of given number.");
+        assertEquals(list(),primefacts.prime(1),"Should return prime factors of given number.");
     }
 
     @Test
