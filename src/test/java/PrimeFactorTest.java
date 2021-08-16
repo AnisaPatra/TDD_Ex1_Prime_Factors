@@ -13,8 +13,9 @@ public class PrimeFactorTest {
     void testPrimeof2() {
         PrimeFactor primefacts = new PrimeFactor();
         assertEquals(2,primefacts.prime(2),"Should return prime factors of given number.");
-
     }
+
+
 
 
 }
